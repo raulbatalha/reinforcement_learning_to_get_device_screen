@@ -187,7 +187,7 @@ This function creates a GIF animation of the agent's path in the environment usi
 
 You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
 
-- Class Diagram
+### Class Diagram
 
 ```mermaid
 classDiagram
@@ -229,7 +229,7 @@ WindowDump : parse_dump() list
 TouchArea : parse_bounds(bounds str) dict
 ```
 
-- Sequence Diagram of the Class QAgent
+### Sequence Diagram of the Class QAgent
 
 ```mermaid
 sequenceDiagram
@@ -262,7 +262,7 @@ QAgent ->> Grafic: create_gif (frames, path_file)
 QAgent ->> QLearning: state_values (values)
 ```
 
-- Sequence Diagram of the Class ScreenTest
+### Sequence Diagram of the Class ScreenTest
 
 ```mermaid
 sequenceDiagram
