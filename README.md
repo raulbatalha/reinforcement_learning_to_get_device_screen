@@ -49,6 +49,7 @@ This will display a Matplotlib figure showing the grid world environment with th
 
 The project's directory structure is as follows:
 
+```
 reinforcement_learning_to_get_device_screen/
 ├── src/
 │   ├── main.py
@@ -77,7 +78,7 @@ reinforcement_learning_to_get_device_screen/
 │   └── test_utils.py
 ├── requirements.txt
 └── setup.py
-
+```
 
 - `env_screen.py`: Contains the implementation of the `Environment` class, representing the grid world environment.
 - `main.py`: Entry point of the project. Executes the Q-learning algorithm in the grid world environment.
