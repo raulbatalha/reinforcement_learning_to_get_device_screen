@@ -48,7 +48,8 @@ This will display a Matplotlib figure showing the grid world environment with th
 ### Project Structure
 
 The project's directory structure is as follows:
-project/
+
+reinforcement_learning_to_get_device_screen/
 ├── src/
 │   ├── main.py
 │   ├── environment/
