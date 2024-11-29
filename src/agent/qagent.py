@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-from env_screen import EnvScreen
+from src.environment.env_screen import EnvScreen
 from qlearning import QLearning
-from util import Grafic
+from src.utils.util import Grafic
 
 
 class QAgent:

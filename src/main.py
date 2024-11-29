@@ -9,10 +9,10 @@ Created on Thu Jun 15 21:12:51 2023
 import os
 import time
 
-from capture_screen import CaptureScreen
-from qagent import QAgent
-from test_screen import ScreenTest
-from util import *
+from src.utils.capture_screen import CaptureScreen
+from agent.qagent import QAgent
+from src.utils.test_screen import ScreenTest
+from src.utils.util import *
 
 
 def clear_screen():

@@ -9,8 +9,8 @@ Created on Thu Jun 15 21:12:51 2023
 import matplotlib.pyplot as plt
 import numpy as np
 
-from env_screen import EnvScreen
-from qlearning import QLearning
+from src.environment.env_screen import EnvScreen
+from agent.qlearning import QLearning
 
 
 class ScreenTest:

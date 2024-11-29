@@ -11,8 +11,7 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 
-from env_screen import EnvScreen
-
+from src.environment.env_screen import EnvScreen
 
 class QLearning():
     def __init__(self):

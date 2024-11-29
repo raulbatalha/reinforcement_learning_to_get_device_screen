@@ -8,12 +8,17 @@ This is a Python codebase that includes several classes and functions for a rein
 - `main` block: In the main block, an instance of the `QAgent` class is created. The `run_training` method is called to train the Q-learning agent, followed by the `run_test` method to run the trained model.
 
 <p align="center">
-<a href="https://imgur.com/RXwBqd4"><img src="https://i.imgur.com/RXwBqd4.gif" title="source: imgur.com" /></a>
-<a href="https://imgur.com/LVoTHNL"><img src="https://i.imgur.com/LVoTHNL.gif" title="source: imgur.com" /></a>
+    <img src="media/figure_01.gif" alt="Descrição da imagem" width="700" />
 </p>
 
 The code also imports several helper classes and functions (`EnvScreen`, `QLearning`, `Grafic`) from other Python files, which are not included here. These additional files likely contain implementation details for the environment, Q-learning algorithm, and plotting utilities.
 Note: The code assumes the existence of a folder named "models" to save the trained model, and it expects the environment to be displayed using the `show_env` method.
+
+<p align="center">
+    <img src="media/figure_02.gif" alt="Descrição da imagem" width="700" />
+</p>
+
+
 
 ### Installation
 
@@ -35,7 +40,7 @@ To use this project, follow these steps:
 
 To run the project, execute the `main.py` file:
 
-    python3 main.py
+    python3 src/main.py
 
 This will start the training process of the Q-learning algorithm in the grid world environment. The agent will learn to navigate from the starting position to the goal position by updating its Q-values. The progress will be displayed in the console.
 This will display a Matplotlib figure showing the grid world environment with the agent's path.
@@ -43,29 +48,35 @@ This will display a Matplotlib figure showing the grid world environment with th
 ### Project Structure
 
 The project's directory structure is as follows:
-├── main.py
-
-├── env_screen.py
-
-├── qlearning.py
-
-├── qagent.py
-
-├── capture_screen.py
-
-├── test_screen.py
-
-├── util.py
-
-├── files (folders)
-
-├── media (folders)
-
-├── models (folders)
-
+project/
+├── src/
+│   ├── main.py
+│   ├── environment/
+│   │   ├── __init__.py
+│   │   └── env_screen.py
+│   ├── agent/
+│   │   ├── __init__.py
+│   │   ├── qlearning.py
+│   │   └── qagent.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── capture_screen.py
+│   │   ├── test_screen.py
+│   │   └── util.py
+├── data/
+│   ├── files/
+│   └── models/
+├── media/
+├── docs/
+│   └── README.md
+├── tests/
+│   ├── __init__.py
+│   └── test_environment.py
+│   └── test_agent.py
+│   └── test_utils.py
 ├── requirements.txt
+└── setup.py
 
-└── README.md
 
 - `env_screen.py`: Contains the implementation of the `Environment` class, representing the grid world environment.
 - `main.py`: Entry point of the project. Executes the Q-learning algorithm in the grid world environment.

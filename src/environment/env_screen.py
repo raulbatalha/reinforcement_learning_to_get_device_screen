@@ -8,7 +8,7 @@ Created on Thu Jun 15 21:12:51 2023
 
 import numpy as np
 
-from util import Grafic
+from src.utils.util import Grafic
 
 
 class EnvScreen:
